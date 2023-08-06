@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .nav {
-    background-color: rgb(52, 49, 49);
-    width: 100%;
+    background-color: rgb(234, 133, 10);
     height: 90px;
     display: flex;
     justify-content: center;
+    margin: 12px;
 }
 
 h1 {
@@ -31,73 +32,169 @@ h1 {
 }
 
 .nav ul li a {
-    color: rgb(237, 230, 230);
     list-style: none;
     text-decoration: none;
-    line-height: 20px;
+    line-height: 80px;
     border: 30px;
+    font-size: x-large;
+    background-color: transparent;
 }
 
 a:hover {
-    color: black;
-    border: 0 45px;
-    
-    background-color: aliceblue;
+    background-color: white;
+    border-radius: 2px 6px;
+    color: blue;
+    font-size: xx-large;
 }
 
 #main {
-    justify-content: center;
-    background:
-        linear-gradient(#392e2e, #220425);
-    color: white;
+      display: flex;
+    background:url(../images/backgound.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: transparent;
-    font-size: x-large;
-    border: 2px solid;
-    display: flex;
-    height: 500px;
+    font-size: xx-large;
+    height: fit-content;
+    margin: 12px;
+    color: aliceblue;
+
+}
+.middle{
+    padding-top: -200px;
+    height: fit-content;
+    line-height: 100%;
+    padding: 35px 35px 35px 0;
     
 }
-p{
-    border: #f4f2f2 3px solid;
-    background-color: #0b0101;
-    background-origin:  2px;
-    background-color: transparent;
-    border-radius: 5px;
-}
-.image {
-    width: 20%;
-    margin: 50px;
-    padding-top: 25px;
+
+ p h1{
+    padding-top: 500px;
+    
 }
 
+.image {
+    width: 100%;
+    padding-left: 100px;
+    
+    padding-top: 15px;
+}
 img {
     justify-content: center;
-    height: 200px;
+    height: 300px;
     border-radius: 100%;
     margin: 30px;
+    transition: transform 2s;
+    animation: slideshow 10s linear infinite;
 }
-
+@keyframes slideshow {
+    0% {
+      left: 0;
+    }
+  
+    100% {
+      left: -200%;
+    }
+  }
+img:hover{
+    transform: rotate(10deg);
+}
 span {
     color: coral;
-    line-height: 100% ;
+    line-height: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.middle {
-    padding-top: 200px;
-}
-.Portifolio{
-    background-color: rgb(248, 250, 252);
+
+.Portifolio {
+    align-items: center;
+    background-color: rgb(30, 46, 62);
     height: 300px;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin: 12px;   
 }
+.first{
+    background-color: rgba(184, 203, 12, 0.181);
+    width:30%;
+    margin: 6px 12px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #9c92924e;
+}
+.personalId{
+    height: 23%;
+    width: 20%;
+}
+.second{
+   background-color: rgba(184, 203, 12, 0.181);
+    width:30%;
+    margin: 6px 12px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #9c92924e;
+}
+.third{
+   background-color: rgba(184, 203, 12, 0.181);
+    width:30%;
+    margin: 6px 12px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #9c92924e;
+}
+.fourth{
+    background-color: rgba(184, 203, 12, 0.181);
+    width:30%;
+    margin: 6px 12px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #9c92924e;
+}
+
 footer {
     background-color: #0b0101;
     height: auto;
-    width: 100%;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 2px 4px;
-    sty
+    padding:  4px;
+    margin: 12px;
+}
+
+.mainfooter {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Privacy_policy {
+    width: 30%;
+    padding: 35px;
+
+}
+
+.working_style_experience {
+    width: 30%;
+    padding: 45px;
+    background: transparent 1%;
+
+}
+
+.social_media {
+    width: 30%;
+    padding: 45px;
+    background: transparent;
+}
+i{
+    justify-content: space-between;
+    padding: 7px;
+    justify-content: space-around;
+    color: blue;
+}
+@media and(max-width: 720px) {
+  .Portifolio {
+    
+   } 
+    
 }

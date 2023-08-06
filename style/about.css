@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent 100%;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 98.3%;
+    background-color: dimgray;
+    padding: 20px;
+    margin: 12px 12px;
+}
